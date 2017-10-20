@@ -1,4 +1,4 @@
-class relcomment:
+class RelComment:
 
     def __init__(self, relc_id,relc_userid,relc_username,relc_relevance2relq):
         self.relc_id=relc_id
