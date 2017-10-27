@@ -22,15 +22,15 @@ class Reader:
         for thread in threads:
             thread_attrs = dict(thread.attrs)
             thread_sequence = thread_attrs[u'thread_sequence']
-            relQuestion=thread.find('relquestion')
+            relQuestion=thread.find('relquestion').get_text(strip=True)
             relQuestion_attrs=dict(relQuestion.attrs)
             relq_id=relQuestion_attrs[u'relq_id']
             relq_subcategory = relQuestion_attrs[u'relq_category']
             relq_date = relQuestion_attrs[u'relq_date']
             relq_userid = relQuestion_attrs[u'relq_userid']
             relq_username = relQuestion_attrs[u'relq_username']
-            relq_relqsubject = relQuestion.find('relqsubject')
-            relq_body = relQuestion.find('relqbody')
+            relq_relqsubject = relQuestion.find('relqsubject').get_text(strip=True)
+            relq_body = relQuestion.find('relqbody').get_text(strip=True)
             relq_relcommentlist =[]
             for comment in thread.findAll('relcomment'):
                 comment_attrs = dict(comment.attrs)
@@ -38,11 +38,12 @@ class Reader:
                 relc_userid = comment_attrs[u'relc_userid']
                 relc_username = comment_attrs[u'relc_username']
                 relc_relevance2relq = comment_attrs[u'relc_relevance2relq']
-                relComment=RelComment(relc_id,relc_userid,relc_username,relc_relevance2relq)
+                relc_text= comment.find('relctext').get_text(strip=True)
+                relComment=RelComment(relc_id,relc_userid,relc_username,relc_relevance2relq,relc_text)
                 relq_relcommentlist.append(relComment)
-            t=Thread(thread_sequence,relq_id,relq_subcategory,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body,relq_relcommentlist)
+            t = Thread(thread_sequence, relq_id, relq_subcategory, relq_date, relq_userid, relq_username,
+                       relq_relqsubject, relq_body, relq_relcommentlist)
             thread_list.append(t)
-            pprint(vars(t))
         return thread_list
 
     def printobjects(self,list):
