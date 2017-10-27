@@ -23,18 +23,18 @@ class Reader:
             thread_attrs = dict(thread.attrs)
             thread_sequence = thread_attrs[u'thread_sequence']
             try:
-                thread_subtaska_skip_because_same_as_relquestion_id=thread_attrs[u'subtaska_skip_because_same_as_relquestion_id']
+                thread_subtaska_skip_because_same_as_relquestion_id = thread_attrs[u'subtaska_skip_because_same_as_relquestion_id']
             except KeyError:
-                thread_subtaska_skip_because_same_as_relquestion_id = None
+                thread_subtaska_skip_because_same_as_relquestion_id=None
             relQuestion=thread.find('relquestion')
             relQuestion_attrs=dict(relQuestion.attrs)
             relq_id=relQuestion_attrs[u'relq_id']
-            relq_category = relQuestion_attrs[u'relq_category']
+            relq_subcategory = relQuestion_attrs[u'relq_category']
             relq_date = relQuestion_attrs[u'relq_date']
             relq_userid = relQuestion_attrs[u'relq_userid']
             relq_username = relQuestion_attrs[u'relq_username']
-            relq_relqsubject = relQuestion.find('RelQSubject')
-            relq_body = relQuestion.find('relqbody')
+            relq_relqsubject = relQuestion.find('relqsubject')
+            relq_body = relQuestion.find('body')
             relq_relcommentlist =[]
             for comment in thread.findAll('relcomment'):
                 comment_attrs = dict(comment.attrs)
@@ -52,7 +52,7 @@ class Reader:
     def printobjects(self,list):
         for t in list:
             print(t.thread_sequence)
-
+        print(len(list))
 
     def getfile1(self):
         return self.file1
