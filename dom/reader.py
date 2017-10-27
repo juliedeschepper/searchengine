@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 from dom.thread import Thread
 from dom.relcomment import RelComment
+from pprint import pprint
 
 
 class Reader:
@@ -45,6 +46,7 @@ class Reader:
                 relq_relcommentlist.append(relComment)
             t=Thread(thread_sequence,thread_subtaska_skip_because_same_as_relquestion_id,relq_id,relq_category,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body,relq_relcommentlist)
             thread_list.append(t)
+            pprint(vars(t))
         return thread_list
 
     def printobjects(self,list):
