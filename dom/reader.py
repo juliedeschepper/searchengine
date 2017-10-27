@@ -21,23 +21,26 @@ class Reader:
         for thread in threads:
             thread_attrs = dict(thread.attrs)
             thread_sequence = thread_attrs[u'thread_sequence']
-            thread_subtaska_skip_because_same_as_relquestion_id=thread_attrs[u'subtaska_skip_because_same_as_relquestion_id']
+            try:
+                thread_subtaska_skip_because_same_as_relquestion_id = thread_attrs[u'subtaska_skip_because_same_as_relquestion_id']
+            except KeyError:
+                thread_subtaska_skip_because_same_as_relquestion_id=None
             relQuestion=thread.find('relquestion')
             relQuestion_attrs=dict(relQuestion.attrs)
             relq_id=relQuestion_attrs[u'relq_id']
-            relq_subcategory = relQuestion_attrs[u'relq_subcategory']
+            relq_subcategory = relQuestion_attrs[u'relq_category']
             relq_date = relQuestion_attrs[u'relq_date']
             relq_userid = relQuestion_attrs[u'relq_userid']
             relq_username = relQuestion_attrs[u'relq_username']
-            relq_relqsubject = relQuestion_attrs[u'relq_relqsubject']
-            relq_body = relQuestion_attrs[u'relq_body']
+            relq_relqsubject = relQuestion.find('relqsubject')
+            relq_body = relQuestion.find('body')
             relq_relcommentlist =[]
             for comment in thread.findAll('relcomment'):
                 comment_attrs = dict(comment.attrs)
                 relc_id = comment_attrs[u'relc_id']
                 relc_userid = comment_attrs[u'relc_userid']
                 relc_username = comment_attrs[u'relc_username']
-                relc_relevance2relq = comment_attrs[u'relc_revelance2relq']
+                relc_relevance2relq = comment_attrs[u'relc_relevance2relq']
                 relComment=RelComment(relc_id,relc_userid,relc_username,relc_relevance2relq)
                 relq_relcommentlist.append(relComment)
             t=Thread(thread_sequence,thread_subtaska_skip_because_same_as_relquestion_id,relq_id,relq_subcategory,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body,relq_relcommentlist)
@@ -47,7 +50,7 @@ class Reader:
     def printobjects(self,list):
         for t in list:
             print(t.thread_sequence)
-
+        print(len(list))
 
     def getfile1(self):
         return self.file1
