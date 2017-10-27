@@ -43,7 +43,7 @@ class Reader:
                 relc_relevance2relq = comment_attrs[u'relc_relevance2relq']
                 relComment=RelComment(relc_id,relc_userid,relc_username,relc_relevance2relq)
                 relq_relcommentlist.append(relComment)
-            t=Thread(thread_sequence,thread_subtaska_skip_because_same_as_relquestion_id,relq_id,relq_subcategory,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body,relq_relcommentlist)
+            t=Thread(thread_sequence,thread_subtaska_skip_because_same_as_relquestion_id,relq_id,relq_category,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body,relq_relcommentlist)
             thread_list.append(t)
         return thread_list
 
