@@ -29,8 +29,8 @@ class Reader:
             relq_date = relQuestion_attrs[u'relq_date']
             relq_userid = relQuestion_attrs[u'relq_userid']
             relq_username = relQuestion_attrs[u'relq_username']
-            relq_relqsubject = relQuestion.find('relqsubject')
-            relq_body = relQuestion.find('relqbody')
+            relq_relqsubject = relQuestion.find('relqsubject').get_text(strip=True)
+            relq_body = relQuestion.find('relqbody').get_text(strip=True)
             relq_relcommentlist =[]
             for comment in thread.findAll('relcomment'):
                 comment_attrs = dict(comment.attrs)
