@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml [
+        <!ELEMENT xml (Thread*)>
+        <!ATTLIST xml
+                version CDATA #REQUIRED
+                >
+        <!ELEMENT Thread (RelQuestion, RelComment*)>
+        <!ATTLIST Thread
+                THREAD_SEQUENCE CDATA #REQUIRED
+                >
+        <!ELEMENT RelQuestion (RelQSubject, RelQBody)>
+        <!ATTLIST RelQuestion
+                RELQ_ID CDATA #REQUIRED
+                RELQ_CATEGORY CDATA #REQUIRED
+                RELQ_DATE CDATA #REQUIRED
+                RELQ_USERID CDATA #REQUIRED
+                RELQ_USERNAME CDATA #REQUIRED
+                >
+        <!ELEMENT RelQSubject (#PCDATA)>
+        <!ELEMENT RelQBody (#PCDATA)>
+        <!ELEMENT RelComment (RelCText)>
+        <!ATTLIST RelComment
+                RELC_ID CDATA #REQUIRED
+                RELC_DATE CDATA #REQUIRED
+                RELC_USERID CDATA #REQUIRED
+                RELC_USERNAME CDATA #REQUIRED
+                RELC_RELEVANCE2RELQ CDATA #REQUIRED
+                >
+        <!ELEMENT RelCText (#PCDATA)>
+        ]>
+<xml version="1.0">
+
+    <Thread THREAD_SEQUENCE="Q268_R16">
+        <RelQuestion RELQ_ID="Q268_R16" RELQ_CATEGORY="Moving to Qatar" RELQ_DATE="2013-07-31 02:27:08"
+                     RELQ_USERID="U5151" RELQ_USERNAME="shehabi">
+            <RelQSubject>Best Bank.</RelQSubject>
+            <RelQBody>Hi ti all QL's; What bank you are using? and why? Are you using this bank just because it has an
+                affiliate at home? Regards;
+            </RelQBody>
+        </RelQuestion>
+
+        <RelComment RELC_ID="Q268_R16_C1" RELC_DATE="2013-07-31 06:46:39" RELC_USERID="U65" RELC_USERNAME="Molten Metal"
+                    RELC_RELEVANCE2RELQ="Bad">
+            <RelCText>banks are using us ... Talk to those who had taken a credit card or loan to know more ...
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C2" RELC_DATE="2013-07-31 08:10:53" RELC_USERID="U956" RELC_USERNAME="Rip Cord"
+                    RELC_RELEVANCE2RELQ="Bad">
+            <RelCText>In Qatar that is like saying which is the best STD.</RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C3" RELC_DATE="2013-07-31 10:37:03" RELC_USERID="U5152"
+                    RELC_USERNAME="arman1arzoo" RELC_RELEVANCE2RELQ="Bad">
+            <RelCText>I'm surprised to see such feedbacks on Qatar banks... Is there any serious problem with banks
+                here? Please share if any one had a bad experience before. I'm using commercial bank and till now I'm OK
+                with their services.
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C4" RELC_DATE="2013-08-01 11:38:21" RELC_USERID="U5153"
+                    RELC_USERNAME="westernindoha" RELC_RELEVANCE2RELQ="Good">
+            <RelCText>Well Arman; nothing is wrong here with banks; I feel they are not up to par with UAE bank in terms
+                of service at least not with the best which is abu dhabi islamic bank; but I have made an extensive
+                review of QIB; IBQ; QNB and CBQ. I found out that QNB and CBQ are very dynamic; gives you a lot for
+                cheap. My needs are: -Free Current account with no minimum balance with 2 debit card -Good credit card
+                with airport lounge and added benefit -0% payment plan at good retaillers -Excellent mobile and internet
+                banking -Cheap ATM and transfer for abroad... For the above; QNB and CBQ are the best. But it really
+                depends on your salary too. IBQ is not very good. QIB is ridiculous.
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C5" RELC_DATE="2013-08-01 11:45:49" RELC_USERID="U492"
+                    RELC_USERNAME="happygolucky" RELC_RELEVANCE2RELQ="Good">
+            <RelCText>With QNB for last 4 years plus...no issues...great service with a smile (mostly) from Qatari's
+                (yeah dont be surprised) and now since they started QNB First it just got even better...:)
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C6" RELC_DATE="2013-08-02 06:38:26" RELC_USERID="U5151" RELC_USERNAME="shehabi"
+                    RELC_RELEVANCE2RELQ="PotentiallyUseful">
+            <RelCText>WesternInDoha; that's the information that I am looking for and it answer my question. Cheers...
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C7" RELC_DATE="2013-08-02 06:46:37" RELC_USERID="U5151" RELC_USERNAME="shehabi"
+                    RELC_RELEVANCE2RELQ="PotentiallyUseful">
+            <RelCText>MoltenMetal; it depend how you are looking on the subject matter and the point of view; as the if
+                the glass half empty or half full !!! There are fees for the service; I wish that we don't need banks
+                and you reminded me of old days where we put the gold and the money in bags and bury them in the ground
+                ;) Good Luck..
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C8" RELC_DATE="2013-08-02 06:51:51" RELC_USERID="U5151" RELC_USERNAME="shehabi"
+                    RELC_RELEVANCE2RELQ="Bad">
+            <RelCText>That's new way of description for the Bank's... I am planing to do the same; let the company
+                deposit the salary in the bank account and I will ignore it for some time ;) Cheers...
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C9" RELC_DATE="2013-08-02 07:10:40" RELC_USERID="U5151" RELC_USERNAME="shehabi"
+                    RELC_RELEVANCE2RELQ="Bad">
+            <RelCText>I don't know if it is the high competition? or No competition?? Is there any review issued by
+                Central Bank? or any magazine ?? Is there any benchmark based on customer feedback?? When I searched QL
+                there are so many disappointed and negative feedback from from bank clients I don't see the reasons
+                behind it?? Regards;
+            </RelCText>
+        </RelComment>
+
+        <RelComment RELC_ID="Q268_R16_C10" RELC_DATE="2013-08-02 12:55:52" RELC_USERID="U5153"
+                    RELC_USERNAME="westernindoha" RELC_RELEVANCE2RELQ="Good">
+            <RelCText>Sheabi; the reason behind it; is that most people in QL have very low income; hence everytime a
+                bank will take them a penny even a very justified one for a rendered service they will call them
+                robbers...Also bank may not have the same level of service if you earn 2000 or 25000... I would advise
+                you to find a the right branch and the right customer service agent; and stick to him to build a
+                relationship. Because like everywhere you got some lazy people and you want to avoid them.
+            </RelCText>
+        </RelComment>
+    </Thread>
+</xml>

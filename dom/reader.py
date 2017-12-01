@@ -11,8 +11,8 @@ class Reader:
         self.file3 = "files/SemEval2016-Task3-CQA-QL-train-part2-subtaskA.xml"
 
     def readfile(self,file):
-        fileToRead = open(file, encoding="utf8")
-        content = fileToRead.read()
+        with open(file, encoding="utf8") as f:
+         content = f.read()
         soup = BeautifulSoup(content, "lxml")
         return soup
 
@@ -22,7 +22,7 @@ class Reader:
         for thread in threads:
             thread_attrs = dict(thread.attrs)
             thread_sequence = thread_attrs[u'thread_sequence']
-            relQuestion=thread.find('relquestion').get_text(strip=True)
+            relQuestion=thread.find('relquestion')
             relQuestion_attrs=dict(relQuestion.attrs)
             relq_id=relQuestion_attrs[u'relq_id']
             relq_subcategory = relQuestion_attrs[u'relq_category']
