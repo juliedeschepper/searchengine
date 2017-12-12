@@ -12,16 +12,24 @@ class Tokenizer:
     def tokenize(self, threads):
         thread_text_list = []
         for thread in threads:
-           thread_text_list.append(self.tokenize_thread(thread))
+           thread_text_list.extend(self.tokenize_thread(thread))
         return thread_text_list
 
     def tokenize_thread(self,thread):
         thread_list=[]
-        thread_list.append(self.eliminate(thread.relqbody))
+        thread_list.extend(self.eliminate(thread.relqbody))
         for comment in thread.relCommentList:
             array=self.eliminate(comment.relc_text)
-            thread_list.append(array)
+            thread_list.extend(array)
         return thread_list
+
+    def tokenize_comments(self,threads):
+        thread_text_list = []
+        for thread in threads:
+            for comment in thread.relCommentList:
+                array = self.eliminate(comment.relc_text)
+                thread_text_list.extend(array)
+        return thread_text_list
 
     def eliminate(self,text):
         text = text.lower()

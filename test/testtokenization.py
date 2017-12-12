@@ -1,6 +1,7 @@
 import unittest
 from dom.reader import Reader
 from dom.tokenization import Tokenizer
+from dom.document_model import Document
 
 
 
@@ -11,7 +12,13 @@ class TokenizerTest(unittest.TestCase):
         threads = reader.makeobjectsfromxml(soup)
         tokenizer = Tokenizer(threads)
         threads_tokenized = tokenizer.tokenize(threads)
-        print(threads_tokenized)
+        comments_tokenized = tokenizer.tokenize_comments(threads)
+        print(comments_tokenized)
+        document = Document(comments_tokenized)
+        frequenties = document.frequenties()
+        print(frequenties)
+
+
 
 
 if __name__ == '__main__':
