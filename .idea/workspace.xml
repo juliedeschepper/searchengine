@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc37d4ed-1afe-493d-8e08-81f42e43dbda" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dom/document.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/searchengine.iml" afterPath="$PROJECT_DIR$/.idea/searchengine.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/model/DocumentModel.py" afterPath="$PROJECT_DIR$/model/DocumentModel.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/testdocumentmodel.py" afterPath="$PROJECT_DIR$/test/testdocumentmodel.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,12 +16,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/searchengine$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1508482282488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dom" />
-    <SUITE FILE_PATH="coverage/searchengine$Unittests_in_testdocumentmodel_py.coverage" NAME="Unittests in testdocumentmodel.py Coverage Results" MODIFIED="1513344948619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/searchengine$Unittests_in_testreader_py.coverage" NAME="Unittests in testreader.py Coverage Results" MODIFIED="1509090078309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/searchengine$reader.coverage" NAME="reader Coverage Results" MODIFIED="1507881547070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dom" />
-    <SUITE FILE_PATH="coverage/searchengine$Unittests_for_testdocumentmodel_DocumentTest.coverage" NAME="Unittests for testdocumentmodel.DocumentTest Coverage Results" MODIFIED="1513338274263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
     <SUITE FILE_PATH="coverage/searchengine$test_reader.coverage" NAME="test_reader Coverage Results" MODIFIED="1509089323181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/searchengine$Unittests_in_testdocumentmodel_py.coverage" NAME="Unittests in testdocumentmodel.py Coverage Results" MODIFIED="1513344948619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/searchengine$Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel.coverage" NAME="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel Coverage Results" MODIFIED="1513348329615" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/searchengine$Unittests_for_testdocumentmodel_DocumentTest.coverage" NAME="Unittests for testdocumentmodel.DocumentTest Coverage Results" MODIFIED="1513338274263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test" />
+    <SUITE FILE_PATH="coverage/searchengine$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1508482282488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dom" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -38,18 +40,8 @@
       <file leaf-file-name="DocumentModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/DocumentModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="document.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dom/document.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="181">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,8 +50,8 @@
       <file leaf-file-name="CollectionModel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/CollectionModel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="357">
+              <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -68,8 +60,8 @@
       <file leaf-file-name="testdocumentmodel.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/testdocumentmodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="397">
+              <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -77,11 +69,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="document.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dom/document.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tokenization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/tokenization.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="399">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -117,7 +119,6 @@
         <option value="$PROJECT_DIR$/dom/CollectionModel.py" />
         <option value="$PROJECT_DIR$/dom/comment.py" />
         <option value="$PROJECT_DIR$/dom/collection.py" />
-        <option value="$PROJECT_DIR$/dom/document.py" />
         <option value="$PROJECT_DIR$/dom/thread.py" />
         <option value="$PROJECT_DIR$/dom/query.py" />
         <option value="$PROJECT_DIR$/model/QueryModel.py" />
@@ -125,8 +126,9 @@
         <option value="$PROJECT_DIR$/utils/reader.py" />
         <option value="$PROJECT_DIR$/utils/lematizer_stemmer.py" />
         <option value="$PROJECT_DIR$/utils/tokenization.py" />
-        <option value="$PROJECT_DIR$/test/testdocumentmodel.py" />
+        <option value="$PROJECT_DIR$/dom/document.py" />
         <option value="$PROJECT_DIR$/model/DocumentModel.py" />
+        <option value="$PROJECT_DIR$/test/testdocumentmodel.py" />
       </list>
     </option>
   </component>
@@ -136,11 +138,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="778" />
-    <option name="y" value="1" />
-    <option name="width" value="826" />
-    <option name="height" value="820" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -173,6 +174,11 @@
             <path>
               <item name="searchengine" type="b2602c69:ProjectViewProjectNode" />
               <item name="searchengine" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="searchengine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="searchengine" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -189,8 +195,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -216,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in testdocumentmodel.py">
+  <component name="RunManager" selected="Python tests.Unittests for testdocumentmodel.DocumentTest.testdocumentmodel">
     <configuration name="Unittests for testdocumentmodel.DocumentTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,6 +236,21 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;testdocumentmodel.DocumentTest&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="searchengine" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;testdocumentmodel.DocumentTest.testdocumentmodel&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests in testdocumentmodel.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -262,24 +283,6 @@
       <option name="_new_target" value="&quot;$PROJECT_DIR$/test/testreader.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dom" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="searchengine" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dom/__init__.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <configuration name="test_reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -299,19 +302,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.__init__" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_reader" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testreader.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testdocumentmodel.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for testdocumentmodel.DocumentTest" />
+      <item index="0" class="java.lang.String" itemvalue="Python.test_reader" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testreader.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testdocumentmodel.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests for testdocumentmodel.DocumentTest" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in testdocumentmodel.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests for testdocumentmodel.DocumentTest" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in testreader.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python.test_reader" />
-        <item index="4" class="java.lang.String" itemvalue="Python.__init__" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in testdocumentmodel.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests for testdocumentmodel.DocumentTest" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in testreader.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python.test_reader" />
       </list>
     </recent_temporary>
   </component>
@@ -332,26 +335,26 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 21m 42s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 14h 56m 58s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 25m 11s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 15h 00m 50s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 25m 26s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 15h 22m 53s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 26m 13s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 15h 24m 57s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 27m 58s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 15h 28m 34s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 28m 31s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 15h 29m 06s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 33m 26s.xml">
-      <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
+    <history-entry file="Unittests_for_testdocumentmodel_DocumentTest_testdocumentmodel - 2017.12.15 at 15h 32m 13s.xml">
+      <configuration name="Unittests for testdocumentmodel.DocumentTest.testdocumentmodel" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_testdocumentmodel_py - 2017.12.15 at 14h 34m 06s.xml">
       <configuration name="Unittests in testdocumentmodel.py" configurationId="tests" />
@@ -364,20 +367,20 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16195373" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16433942" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6684073" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31561086" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12786002" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31628534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -405,13 +408,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dom/thread.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/files/SemEval2016-Task3-CQA-QL-train-part1-subtaskA.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2247">
@@ -426,13 +422,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$PROJECT_DIR$/utils/reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -440,13 +430,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$PROJECT_DIR$/utils/reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -454,13 +438,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -468,13 +446,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/__init__.py" />
     <entry file="file://$PROJECT_DIR$/dom/relquestion.py" />
     <entry file="file://$PROJECT_DIR$/files/SemEval2016-Task3-CQA-QL-train-part1-subtaskA.xml" />
     <entry file="file://$PROJECT_DIR$/test/testreader.py">
@@ -491,13 +463,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$PROJECT_DIR$/dom/thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -526,13 +492,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$PROJECT_DIR$/dom/thread.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -548,13 +508,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$PROJECT_DIR$/utils/reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -562,13 +516,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$PROJECT_DIR$/utils/reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -576,13 +524,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/unittest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -614,38 +556,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/files/test.xml" />
     <entry file="file://$PROJECT_DIR$/dom/text.py" />
-    <entry file="file://$PROJECT_DIR$/files/testTreadFile.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dom/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/__init__.py" />
     <entry file="file://$PROJECT_DIR$/model/QueryModel.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document_model.py" />
     <entry file="file://$PROJECT_DIR$/dom/collection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -674,7 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -700,46 +618,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dom/document.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/tokenization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        <state relative-caret-position="399">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/CollectionModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="357">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1">
+          <caret line="621" column="0" lean-forward="false" selection-start-line="621" selection-start-column="0" selection-end-line="621" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/DocumentModel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="181">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dom/document.py">
+    <entry file="file://$PROJECT_DIR$/files/testTreadFile.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="-567">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/testdocumentmodel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="397">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

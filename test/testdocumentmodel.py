@@ -18,10 +18,11 @@ class DocumentTest(unittest.TestCase):
             print(thread.query.body)
             for document in thread.relCommentList:
                 print(document.text)
-                document_model = DocumentModel(document)
-                tfidx = document_model.initModel()
-                for tf in tfidx:
-                    print(tf)
+                document_model = DocumentModel(document.text)
+                tfidx = document_model.tfidx_document()
+                print(tfidx)
+
+
 
 
 
