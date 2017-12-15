@@ -1,5 +1,9 @@
 from bs4 import BeautifulSoup
 from dom.thread import Thread
+from dom.collection import Collection
+from dom.query import Query
+from dom.document import Document
+
 from pprint import pprint
 
 
@@ -30,6 +34,8 @@ class Reader:
             relq_username = relQuestion_attrs[u'relq_username']
             relq_relqsubject = relQuestion.find('relqsubject').get_text(strip=True)
             relq_body = relQuestion.find('relqbody').get_text(strip=True)
+            query=Query(relq_id,relq_subcategory,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body)
+
             relq_relcommentlist =[]
             for comment in thread.findAll('relcomment'):
                 comment_attrs = dict(comment.attrs)
@@ -38,12 +44,12 @@ class Reader:
                 relc_username = comment_attrs[u'relc_username']
                 relc_relevance2relq = comment_attrs[u'relc_relevance2relq']
                 relc_text= comment.find('relctext').get_text(strip=True)
-                relComment=RelComment(relc_id,relc_userid,relc_username,relc_relevance2relq,relc_text)
+                relComment=Document(relc_id,relc_userid,relc_username,relc_relevance2relq,relc_text)
                 relq_relcommentlist.append(relComment)
-            t = Thread(thread_sequence, relq_id, relq_subcategory, relq_date, relq_userid, relq_username,
-                       relq_relqsubject, relq_body, relq_relcommentlist)
+            t = Thread(thread_sequence, query, relq_relcommentlist)
             thread_list.append(t)
-        return thread_list
+        collection = Collection(thread_list)
+        return collection
 
     def printobjects(self,list):
         for t in list:

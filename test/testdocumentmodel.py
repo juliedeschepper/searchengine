@@ -2,18 +2,26 @@ import unittest
 from utils.reader import Reader
 from utils.tokenization import Tokenizer
 from model.DocumentModel import DocumentModel
+from model.CollectionModel import CollectionModel
+
 
 class DocumentTest(unittest.TestCase):
+
+
     def testdocumentmodel(self):
         reader = Reader()
         soup = reader.readfile("../files/testTreadFile.xml")
-        threads = reader.makeobjectsfromxml(soup)
-        tokenizer = Tokenizer(threads)
-        comments_tokenized = tokenizer.tokenize_comments(threads)
-        print(comments_tokenized)
-        document = DocumentModel(comments_tokenized)
-        print(document)
-
+        collection = reader.makeobjectsfromxml(soup)
+        tokenizer = Tokenizer(collection)
+        collection_tokenized = tokenizer.tokenize()
+        for thread in collection_tokenized.threads:
+            print(thread.query.body)
+            for document in thread.relCommentList:
+                print(document.text)
+                document_model = DocumentModel(document)
+                tfidx = document_model.initModel()
+                for tf in tfidx:
+                    print(tf)
 
 
 

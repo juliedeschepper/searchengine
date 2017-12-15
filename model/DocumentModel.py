@@ -9,8 +9,9 @@ class DocumentModel:
 
     def initModel(self):
         tfidx = []
-        for list in self.words:
-            counts = Counter(list)
+        for word in self.document.text:
+            counts = Counter(word)
+            print(counts)
             aantal = sum(counts.values())
             keys = counts.keys()
             values = counts.values()

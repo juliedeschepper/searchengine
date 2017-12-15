@@ -7,7 +7,7 @@ class LemmingStemming:
 
     def lemmatizerstemmer(self,word):
         word_lemmatized=self.lemmatizer(word)
-        word_stemmed=self.stemmer(word)
+        word_stemmed=self.stemmer(word_lemmatized)
         return word_stemmed
 
     def lemmatizer(self, word):
@@ -19,4 +19,3 @@ class LemmingStemming:
         porter_stemmer = PorterStemmer()
         word_stemmed=porter_stemmer.stem(word)
         return word_stemmed
-

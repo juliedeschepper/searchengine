@@ -4,34 +4,18 @@ from utils.lematizer_stemmer import LemmingStemming
 
 
 class Tokenizer:
-    def __init__(self, threads):
-        self.threads = threads
-        self.lemmingstemming=LemmingStemming(threads)
+    def __init__(self, collection):
+        self.collection = collection
+        self.lemmingstemming=LemmingStemming(collection)
 
-    def tokenize(self, threads):
-        thread_text_list = []
-        for thread in threads:
-           thread_text_list.extend(self.tokenize_thread(thread))
-        return thread_text_list
+    def tokenize(self):
+        for thread in self.collection.threads:
+            thread.query.body=self.tokenizeText(thread.query.body)
+            for document in thread.relCommentList:
+                document.text=self.tokenizeText(document.text)
+        return self.collection
 
-    def tokenize_thread(self,thread):
-        thread_list=[]
-        thread_list.extend(self.eliminate(thread.relqbody))
-        for comment in thread.relCommentList:
-            array=self.eliminate(comment.relc_text)
-            thread_list.extend(array)
-        return thread_list
-
-    def tokenize_comments(self,threads):
-        thread_text_list = []
-        for thread in threads:
-            for comment in thread.relCommentList:
-                array = self.eliminate(comment.relc_text)
-                thread_text_list.append(array)
-        return thread_text_list
-
-
-    def eliminate(self,text):
+    def tokenizeText(self,text):
         text = text.lower()
         tokenizer = RegexpTokenizer(r'\w+')
         tokens = tokenizer.tokenize(text)
