@@ -5,8 +5,12 @@ class Document:
         self.words = words
 
     def frequenties(self):
-        freq = Counter(self.words)
-        aantal = len(self.words)
-        
-        return freq
+        counts = Counter(self.words)
+        aantal = sum(counts.values())
+        keys = counts.keys()
+        values = counts.values()
+        freqvalues = [x / aantal for x in values]
+        freqs = dict(zip(keys,freqvalues))
+
+        return freqs
 
