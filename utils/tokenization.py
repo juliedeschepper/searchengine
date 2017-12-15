@@ -1,7 +1,6 @@
-import nltk
 from nltk.tokenize import RegexpTokenizer
-from nltk.corpus import stopwords
-from dom.lematizer_stemmer import LemmingStemming
+
+from utils.lematizer_stemmer import LemmingStemming
 
 
 class Tokenizer:

@@ -1,8 +1,9 @@
 import unittest
-from dom.reader import Reader
+
 from dom.tokenization import Tokenizer
 from dom.document_model import Document
 
+from utils.reader import Reader
 
 
 class TokenizerTest(unittest.TestCase):
