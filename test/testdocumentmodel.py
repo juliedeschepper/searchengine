@@ -12,8 +12,8 @@ class DocumentTest(unittest.TestCase):
         comments_tokenized = tokenizer.tokenize_comments(threads)
         print(comments_tokenized)
         document = Document(comments_tokenized)
-        document.frequenties()
-
+        frequenties = document.frequenties()
+        print(frequenties)
 
 
 

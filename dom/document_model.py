@@ -5,6 +5,7 @@ class Document:
         self.words = words
 
     def frequenties(self):
+        freq_per_comment = []
         for list in self.words:
             counts = Counter(list)
             aantal = sum(counts.values())
@@ -12,7 +13,9 @@ class Document:
             values = counts.values()
             freqvalues = [x / aantal for x in values]
             freqs = dict(zip(keys, freqvalues))
-            print(freqs)
+            freq_per_comment.append(freqs)
+
+        return freq_per_comment
 
 
 
