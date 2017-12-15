@@ -10,9 +10,10 @@ class DocumentTest(unittest.TestCase):
         threads = reader.makeobjectsfromxml(soup)
         tokenizer = Tokenizer(threads)
         comments_tokenized = tokenizer.tokenize_comments(threads)
+        print(comments_tokenized)
         document = Document(comments_tokenized)
-        frequenties = document.frequenties()
-        print(frequenties)
+        document.frequenties()
+
 
 
 

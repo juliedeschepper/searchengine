@@ -28,8 +28,9 @@ class Tokenizer:
         for thread in threads:
             for comment in thread.relCommentList:
                 array = self.eliminate(comment.relc_text)
-                thread_text_list.extend(array)
+                thread_text_list.append(array)
         return thread_text_list
+
 
     def eliminate(self,text):
         text = text.lower()
