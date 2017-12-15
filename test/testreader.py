@@ -1,5 +1,6 @@
 import unittest
-from dom.reader import Reader
+
+from utils.reader import Reader
 
 
 class ReaderTest(unittest.TestCase):

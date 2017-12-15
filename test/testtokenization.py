@@ -1,7 +1,8 @@
 import unittest
-from dom.reader import Reader
+
 from dom.tokenization import Tokenizer
 
+from utils.reader import Reader
 
 
 class TokenizerTest(unittest.TestCase):
