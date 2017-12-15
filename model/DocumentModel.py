@@ -8,11 +8,17 @@ class DocumentModel:
         self.initModel()
 
     def initModel(self):
-        words = self.document.text.split()
-        wordCount = Counter(words)
+        tfidx = []
+        for list in self.words:
+            counts = Counter(list)
+            aantal = sum(counts.values())
+            keys = counts.keys()
+            values = counts.values()
+            freqvalues = [x / aantal for x in values]
+            freqs = dict(zip(keys, freqvalues))
+            tfidx.append(freqs)
 
-        for word in wordCount:
-            self.model[word] = (1 / len(words)) * wordCount[word]
+        return tfidx
 
 
     def prob_document_given_query(self,query):

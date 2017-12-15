@@ -1,6 +1,5 @@
 from bs4 import BeautifulSoup
 from dom.thread import Thread
-from dom.document import RelComment
 from pprint import pprint
 
 

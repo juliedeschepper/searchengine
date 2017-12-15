@@ -1,7 +1,7 @@
 import unittest
-from dom.reader import Reader
-from dom.tokenization import Tokenizer
-from dom.document_model import Document
+from utils.reader import Reader
+from utils.tokenization import Tokenizer
+from model.DocumentModel import DocumentModel
 
 class DocumentTest(unittest.TestCase):
     def testdocumentmodel(self):
@@ -11,9 +11,8 @@ class DocumentTest(unittest.TestCase):
         tokenizer = Tokenizer(threads)
         comments_tokenized = tokenizer.tokenize_comments(threads)
         print(comments_tokenized)
-        document = Document(comments_tokenized)
-        frequenties = document.frequenties()
-        print(frequenties)
+        document = DocumentModel(comments_tokenized)
+        print(document)
 
 
 

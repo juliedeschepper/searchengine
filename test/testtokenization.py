@@ -1,7 +1,6 @@
 import unittest
 
-from dom.tokenization import Tokenizer
-from dom.document_model import Document
+from utils.tokenization import Tokenizer
 
 from utils.reader import Reader
 
