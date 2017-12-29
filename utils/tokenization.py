@@ -6,7 +6,7 @@ from utils.lematizer_stemmer import LemmingStemming
 class Tokenizer:
     def __init__(self, collection):
         self.collection = collection
-        self.lemmingstemming=LemmingStemming(collection)
+        self.lemmingstemming = LemmingStemming(collection)
 
     def tokenize(self):
         for thread in self.collection.threads:
@@ -14,6 +14,9 @@ class Tokenizer:
             for document in thread.relCommentList:
                 document.text=self.tokenizeText(document.text)
         return self.collection
+
+    def tokenize_query(self, query):
+        return self.tokenizeText(query)
 
     def tokenizeText(self,text):
         text = text.lower()

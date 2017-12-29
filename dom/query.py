@@ -8,3 +8,4 @@ class Query:
         self.username = username
         self.subject = subject
         self.body = body
+
