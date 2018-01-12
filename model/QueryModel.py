@@ -1,15 +1,17 @@
-from collections import Counter
+from collections import defaultdict
 
 
 class QueryModel:
-    def __init__(self, query):
-        self.query = query
-        self.model = []
-        self.initModel()
+    def __init__(self, threads):
+        self._threads = threads
+        self._words_per_query = defaultdict(list)
+        self.fill_dict()
 
-    def initModel(self):
-        words = self.query.text.split()
-        wordCount = Counter(words)
+    def fill_dict(self):
+        for thread in self._threads:
+            for document in thread._documents:
+                for word in document.text:
+                    self._words_per_query[thread.relq_id].append(word)
 
-        for word in wordCount:
-            self.model[word] = (1 / len(words)) * wordCount[word]
+    def get_query_words(self, thread_id):
+        return self._words_per_query.get(thread_id)

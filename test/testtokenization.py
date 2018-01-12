@@ -8,11 +8,14 @@ from utils.reader import Reader
 class TokenizerTest(unittest.TestCase):
     def testtokenizerfromfile(self):
         reader = Reader()
-        soup = reader.readfile("../files/testTreadFile.xml")
+        soup = reader.readfile()
         threads = reader.makeobjectsfromxml(soup)
         tokenizer = Tokenizer(threads)
-        threads_tokenized = tokenizer.tokenize(threads)
-        print(threads_tokenized)
+        threads_tokenized = tokenizer.tokenize()
+        for thread in threads_tokenized:
+            print(thread._query._body)
+            for document in thread._documents:
+                print(document._text)
 
 
 if __name__ == '__main__':

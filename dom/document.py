@@ -1,14 +1,18 @@
-from utils.tokenization import Tokenizer
-
 class Document:
 
-    def __init__(self, id,userid,username,relevance2relq, text):
-        self.id=id
-        self.userid=userid
-        self.username=username
-        self.relevance2relq=relevance2relq
-        self.text=text
-        self.tokenizer=Tokenizer(text)
+    def __init__(self, id, relevance, text):
+        self._id = id
+        self._relevance = relevance
+        self._text = text
 
-    def get_query_tokenized(self):
-        return self.tokenizer.tokenize_query(self.text)
+    @property
+    def id(self):
+        return self._id
+
+    @property
+    def relevance(self):
+        return self._relevance
+
+    @property
+    def text(self):
+        return self._text

@@ -2,25 +2,23 @@ from collections import Counter
 
 
 class CollectionModel:
-    def __init__(self, collection):
-        self.threads = collection.threads
-        self.tfidx =  {}
-        self.initModel()
+    def __init__(self, threads):
+        self._threads = threads
+        self._tfidx = {}
+        self.calculate_frequency()
 
-    def initModel(self):
-        words=[]
-        for thread in self.threads:
-            for document in thread.relCommentList:
+    def calculate_frequency(self):
+        words = []
+        for thread in self._threads:
+            for document in thread._documents:
                 for word in document.text:
                     words.append(word)
         wordCount = Counter(words)
-        for word in wordCount:
-            self.tfidx[word] = (1 / len(words)) * wordCount[word]
-        return self.tfidx
 
+        for word, frequency in wordCount.items():
+            self._tfidx[word] = frequency / len(words)
 
-    def prob_term(self, term):
-        for key, value in self.tfidx.items():
-            if key == term:
-                return value
-        return 0
+        return self._tfidx
+
+    def get_prob_term(self, term):
+        return self._tfidx.get(term, 0.00001)

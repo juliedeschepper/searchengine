@@ -10,17 +10,24 @@ class DocumentTest(unittest.TestCase):
 
     def testdocumentmodel(self):
         reader = Reader()
-        soup = reader.readfile("../files/testTreadFile.xml")
-        collection = reader.makeobjectsfromxml(soup)
-        tokenizer = Tokenizer(collection)
-        collection_tokenized = tokenizer.tokenize()
-        for thread in collection_tokenized.threads:
-            print(thread.query.body)
-            for document in thread.relCommentList:
-                print(document.text)
-                document_model = DocumentModel(document.text)
-                tfidx = document_model.tfidx_document()
-                print(tfidx)
+        soup = reader.readfile()
+        threads = reader.makeobjectsfromxml(soup)
+        tokenizer = Tokenizer(threads)
+        threads_tokenized = tokenizer.tokenize()
+        collection_model = CollectionModel(threads_tokenized)
+        freq_collection = collection_model.calculate_frequency()
+        print(freq_collection)
+        document_model = DocumentModel(threads_tokenized)
+        freq_document = document_model.calculate_frequency()
+        print(freq_document)
+
+
+
+
+
+
+
+
 
 
 

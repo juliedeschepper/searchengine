@@ -9,61 +9,33 @@ from pprint import pprint
 
 class Reader:
     def __init__(self):
-        self.file1 = "files/SemEval2016-Task3-CQA-QL-dev-subtaskA.xml"
-        self.file2 = "files/SemEval2016-Task3-CQA-QL-train-part1-subtaskA.xml"
-        self.file3 = "files/SemEval2016-Task3-CQA-QL-train-part2-subtaskA.xml"
+        self._file1 = "../files/SemEval2016-Task3-CQA-QL-dev-subtaskA.xml"
+        # self.file2 = "files/SemEval2016-Task3-CQA-QL-train-part1-subtaskA.xml"
+        # self.file3 = "files/SemEval2016-Task3-CQA-QL-train-part2-subtaskA.xml"
 
-    def readfile(self,file):
-        with open(file, encoding="utf8") as f:
+    def readfile(self):
+        with open(self._file1, encoding="utf8") as f:
          content = f.read()
-        soup = BeautifulSoup(content, "lxml")
+        soup = BeautifulSoup(content, "xml")
         return soup
 
     def makeobjectsfromxml(self,soup):
-        thread_list=[]
-        threads=soup.findAll('thread')
-        for thread in threads:
-            thread_attrs = dict(thread.attrs)
-            thread_sequence = thread_attrs[u'thread_sequence']
-            relQuestion=thread.find('relquestion')
-            relQuestion_attrs=dict(relQuestion.attrs)
-            relq_id=relQuestion_attrs[u'relq_id']
-            relq_subcategory = relQuestion_attrs[u'relq_category']
-            relq_date = relQuestion_attrs[u'relq_date']
-            relq_userid = relQuestion_attrs[u'relq_userid']
-            relq_username = relQuestion_attrs[u'relq_username']
-            relq_relqsubject = relQuestion.find('relqsubject').get_text(strip=True)
-            relq_body = relQuestion.find('relqbody').get_text(strip=True)
-            query=Query(relq_id,relq_subcategory,relq_date,relq_userid,relq_username,relq_relqsubject,relq_body)
+        thread_list = []
+        for thread in soup.findAll('Thread'):
+            query = thread.RelQuestion
+            query_object = Query(query.get('RELQ_ID'),
+                              query.RelQSubject.get_text(strip=True),
+                                 query.RelQBody.get_text(strip=True))
+            document_list = []
+            for comment in thread.findAll('RelComment'):
+                document_object = Document(comment.get('RELC_ID'),
+                                           comment.get('RELC_RELEVANCE2RELQ'),
+                                           comment.RelCText.get_text(strip=True))
+                document_list.append(document_object)
 
-            relq_relcommentlist =[]
-            for comment in thread.findAll('relcomment'):
-                comment_attrs = dict(comment.attrs)
-                relc_id = comment_attrs[u'relc_id']
-                relc_userid = comment_attrs[u'relc_userid']
-                relc_username = comment_attrs[u'relc_username']
-                relc_relevance2relq = comment_attrs[u'relc_relevance2relq']
-                relc_text= comment.find('relctext').get_text(strip=True)
-                relComment=Document(relc_id,relc_userid,relc_username,relc_relevance2relq,relc_text)
-                relq_relcommentlist.append(relComment)
-            t = Thread(thread_sequence, query, relq_relcommentlist)
-            thread_list.append(t)
-        collection = Collection(thread_list)
-        return collection
-
-    def printobjects(self,list):
-        for t in list:
-            print(t.thread_sequence)
-        print(len(list))
-
-    def getfile1(self):
-        return self.file1
-
-    def getfile2(self):
-        return self.file2
-
-    def getfile3(self):
-        return self.file3
-
-
+            thread_object = Thread(thread.get('THREAD_SEQUENCE'),
+                                   query_object,
+                                   document_list)
+            thread_list.append(thread_object)
+        return thread_list
 
